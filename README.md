@@ -1,6 +1,7 @@
 # PhoneApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+This project is to demonstrate an automatic phone formatter.  Simple enter a fictious phone number such as 5551234567 and once you click of somewhere the phone field will automatically fix the format of the phone number to display (555) 123-4567.  The purpose of this app is to demonstrate the power of angular directives.
 
 ## Development server
 
