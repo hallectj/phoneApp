@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Demonstration of auto phone correction using directives</h1>
+  <form>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input required pattern="[a-zA-Z]{1,}" ngModel name="first" #first = "ngModel" 
+        class="form-control" id="firstName" type="text">
+      <div class="alert alert-danger" *ngIf="first.touched && !first.valid">
+        <div *ngIf="first.errors.pattern">Must be only letters</div>
+        <div *ngIf="first.errors.required">Must enter a name</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input required appPhoneDirective ngModel name="phone" #phone = "ngModel" class="form-control" id="phone" type="text">
+    </div>
+  </form>
+</div>
